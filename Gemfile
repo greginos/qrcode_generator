@@ -35,6 +35,9 @@ gem 'simple_form'
 # generate QR code
 gem "rqrcode", "~> 2.0"
 
+# generate png
+gem 'chunky_png'
+
 group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'

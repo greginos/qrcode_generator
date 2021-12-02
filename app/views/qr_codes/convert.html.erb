@@ -1,3 +1,14 @@
-<h1>QrCodes#convert</h1>
-<p>Find me in app/views/qr_codes/convert.html.erb</p>
-<% @code %>
+<div class='frame' style="display: flex;justify-content: space-around;">
+    <div class='form'>
+        <h1>Generateur de QR codes</h1>
+        <%= form_with url: "/qr_codes/convert", method: :get, html: {style:"display: grid;justify-content: center;"} do |form| %>
+            <%= form.label :url, "Playlist url :" %>
+            <%= form.text_field :url %>
+            <%= form.label :image_link, "Lien de l'image :" %>
+            <%= form.text_field :image_link %>
+            <%= form.submit "Search" %>
+<% end %>
+
+    </div>
+    <%= render "generate", locals: {code: @code, url: @url} %>
+</div>

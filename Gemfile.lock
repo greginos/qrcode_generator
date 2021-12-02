@@ -226,6 +226,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
+  chunky_png
   dotenv-rails
   font-awesome-sass
   jbuilder (~> 2.7)

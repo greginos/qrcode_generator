@@ -4,7 +4,7 @@ class QrCodeConverter
     end
 
     def call
-        png = @qrcode.as_png(
+        @qrcode.as_png(
             bit_depth: 1,
             border_modules: 4,
             color_mode: ChunkyPNG::COLOR_GRAYSCALE,
@@ -16,6 +16,5 @@ class QrCodeConverter
             resize_gte_to: false,
             size: 600
         )
-        # IO.binwrite("/tmp/github-qrcode.png", png.to_s)
     end
 end
