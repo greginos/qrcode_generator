@@ -7,8 +7,7 @@
             <%= form.label :image_link, "Lien de l'image :" %>
             <%= form.text_field :image_link %>
             <%= form.submit "Search" %>
-<% end %>
-
+        <% end %>
     </div>
-    <%= render "generate", locals: {code: @code, url: @url} %>
+    <%= render :template => "qr_codes/export", locals: {code: @code, url: @url} -%>
 </div>

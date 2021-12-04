@@ -3,6 +3,7 @@
         <img src="<%= @code&.to_data_url %>" />
     </div>
     <div class='cover' style="display: flex;justify-content: center;">
-        <img src="<%= @url %>" />
+        <img src="<%= @url %>" style="width: 330px;" />
     </div>
+    <%= button_to "Export",  qr_codes_export_path, method: :get, params: {code: @code, url: @url} %>
 </div>

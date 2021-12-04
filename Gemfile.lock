@@ -91,6 +91,7 @@ GEM
       activesupport (>= 5.0)
     i18n (1.8.11)
       concurrent-ruby (~> 1.0)
+    imgkit (1.6.2)
     jbuilder (2.11.3)
       activesupport (>= 5.0.0)
     listen (3.7.0)
@@ -214,6 +215,7 @@ GEM
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
+    wkhtmltoimage-binary (0.12.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
     zeitwerk (2.5.1)
@@ -229,8 +231,10 @@ DEPENDENCIES
   chunky_png
   dotenv-rails
   font-awesome-sass
+  imgkit
   jbuilder (~> 2.7)
   listen (~> 3.2)
+  nokogiri
   pg (>= 0.18, < 2.0)
   pry-byebug
   pry-rails
@@ -247,6 +251,7 @@ DEPENDENCIES
   web-console (>= 3.3.0)
   webdrivers
   webpacker (~> 4.0)
+  wkhtmltoimage-binary
 
 RUBY VERSION
    ruby 2.5.5p157

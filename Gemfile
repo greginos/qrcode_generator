@@ -37,6 +37,11 @@ gem "rqrcode", "~> 2.0"
 
 # generate png
 gem 'chunky_png'
+gem 'imgkit'
+gem 'wkhtmltoimage-binary'
+
+# image finder
+gem 'nokogiri'
 
 group :development, :test do
   gem 'pry-byebug'
