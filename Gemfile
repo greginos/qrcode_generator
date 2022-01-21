@@ -39,6 +39,8 @@ gem "rqrcode", "~> 2.0"
 gem 'chunky_png'
 gem 'imgkit'
 gem 'wkhtmltoimage-binary'
+gem "responders"
+gem "mini_magick"
 
 # image finder
 gem 'nokogiri'

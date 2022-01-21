@@ -8,6 +8,15 @@
             <%= form.text_field :image_link %>
             <%= form.submit "Search" %>
         <% end %>
+        <%= button_to "Export",  qr_codes_export_path, method: :post, params: {url: @url, image_url: @image_url} %>
     </div>
-    <%= render :template => "qr_codes/export", locals: {code: @code, url: @url} -%>
+    <div class='frame' style="border-style: inset;width: 600px;border-color: black;">
+    <div class='qr_code' style="display: flex;justify-content: center;">
+        <img src="<%= @code %>" style="width: 330px;"/>
+    </div>
+    <div class='cover' style="display: flex;justify-content: center;">
+        <img src="<%= @image_url %>" style="width: 330px;" />
+    </div>
+</div>
+
 </div>
